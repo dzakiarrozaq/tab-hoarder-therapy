@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Hoarder Therapy</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tab Hoarder Therapy</h1>
+      <p class="subtitle">Keep your browser breathing.</p>
+    </header>
+
+    <div class="stats-card">
+      <div class="stat-value" id="current-tabs">--</div>
+      <div class="stat-label">Tabs Currently Open</div>
+    </div>
+
+    <div class="settings-container">
+      <div class="control-group">
+        <div class="control-text">
+          <label for="max-limit">Max Tab Limit</label>
+          <span class="control-desc">When should we start judging you?</span>
+        </div>
+        <input type="number" id="max-limit" min="1" max="100" value="15" />
+      </div>
+
+      <div class="control-group">
+        <div class="control-text">
+          <label for="pause-toggle">Pause Therapy</label>
+          <span class="control-desc">Take a break from the nagging</span>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="pause-toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="dnd-warning">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <span>Peringatan tidak muncul? Pastikan mode <b>Do Not Disturb</b> Windows kamu dalam posisi Off.</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

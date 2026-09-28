@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Hoarder Therapy",
+  "version": "1.0",
+  "description": "A passive-aggressive productivity tool that reminds you to focus when you open too many tabs.",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Hoarder Therapy"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
